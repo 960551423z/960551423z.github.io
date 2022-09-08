@@ -7,6 +7,7 @@
 /*    background-size: cover;*/
 /*}*/
 
+/* 页头，页脚透明 */
 #page-header {
     background-color: transparent;
 }
@@ -17,4 +18,49 @@
 
 #footer-wrap a,#footer-wrap {
     color: black;
+}
+
+/*指针样式*/
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+    default;
+}
+/*链接小手样式*/
+a, img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+    default;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #49b1f5;
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.4) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255,255,255,0.4) 50%,
+        rgba(255,255,255,0.4) 75%,
+        transparent 75%,
+        transparent
+    );
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
 }
