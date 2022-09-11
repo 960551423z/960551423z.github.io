@@ -79,6 +79,31 @@
     
     
     <entry>
+      <title>LAMP搭建（未完成）</title>
+      <link href="/2022/09/10/Operations/LAMP%E6%90%AD%E5%BB%BA%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/"/>
+      <url>/2022/09/10/Operations/LAMP%E6%90%AD%E5%BB%BA%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>LAMP搭建（未完成）</p><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">apr<span class="literal">-1</span>.<span class="number">4.8</span><span class="literal">-7</span>.el7.x86_64</span><br><span class="line">apr<span class="literal">-util-1</span>.<span class="number">5.2</span><span class="literal">-6</span>.el7.x86_64</span><br><span class="line">httpd<span class="literal">-2</span>.<span class="number">4.6</span><span class="literal">-95</span>.el7.centos.x86_64</span><br><span class="line">php<span class="literal">-5</span>.<span class="number">4.16</span><span class="literal">-48</span>.el7.x86_64</span><br><span class="line">mysql<span class="literal">-5</span>.<span class="number">5.68</span><span class="literal">-1</span>.el7.x86_64</span><br></pre></td></tr></table></figure><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">yum <span class="literal">-y</span> groupinstall <span class="string">&quot;GNOME Desktop&quot;</span></span><br><span class="line">yum <span class="literal">-y</span> install cmake</span><br><span class="line">yum <span class="literal">-y</span> install ncurses<span class="literal">-devel</span></span><br></pre></td></tr></table></figure><p>安装顺序</p><p>apache——&gt;mysql——&gt;php  或者  mysql——&gt;apache——&gt;php</p><p>php-5.3版本之前，mysql先于php编译；5.3之后，无所谓</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Operations </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Operations </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>apache服务</title>
       <link href="/2022/09/10/Operations/apache%E6%9C%8D%E5%8A%A1/"/>
       <url>/2022/09/10/Operations/apache%E6%9C%8D%E5%8A%A1/</url>
@@ -129,31 +154,6 @@
     
     
     <entry>
-      <title>LAMP搭建（未完成）</title>
-      <link href="/2022/09/10/Operations/LAMP%E6%90%AD%E5%BB%BA%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/"/>
-      <url>/2022/09/10/Operations/LAMP%E6%90%AD%E5%BB%BA%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<p>LAMP搭建（未完成）</p><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">apr<span class="literal">-1</span>.<span class="number">4.8</span><span class="literal">-7</span>.el7.x86_64</span><br><span class="line">apr<span class="literal">-util-1</span>.<span class="number">5.2</span><span class="literal">-6</span>.el7.x86_64</span><br><span class="line">httpd<span class="literal">-2</span>.<span class="number">4.6</span><span class="literal">-95</span>.el7.centos.x86_64</span><br><span class="line">php<span class="literal">-5</span>.<span class="number">4.16</span><span class="literal">-48</span>.el7.x86_64</span><br><span class="line">mysql<span class="literal">-5</span>.<span class="number">5.68</span><span class="literal">-1</span>.el7.x86_64</span><br></pre></td></tr></table></figure><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">yum <span class="literal">-y</span> groupinstall <span class="string">&quot;GNOME Desktop&quot;</span></span><br><span class="line">yum <span class="literal">-y</span> install cmake</span><br><span class="line">yum <span class="literal">-y</span> install ncurses<span class="literal">-devel</span></span><br></pre></td></tr></table></figure><p>安装顺序</p><p>apache——&gt;mysql——&gt;php  或者  mysql——&gt;apache——&gt;php</p><p>php-5.3版本之前，mysql先于php编译；5.3之后，无所谓</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Operations </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Operations </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>ftp配置</title>
       <link href="/2022/09/10/Operations/ftp%E6%9C%8D%E5%8A%A1/"/>
       <url>/2022/09/10/Operations/ftp%E6%9C%8D%E5%8A%A1/</url>
@@ -171,31 +171,6 @@
         <tags>
             
             <tag> Operations </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>java多态</title>
-      <link href="/2022/09/09/java/%E7%AE%80%E4%BB%8B/"/>
-      <url>/2022/09/09/java/%E7%AE%80%E4%BB%8B/</url>
-      
-        <content type="html"><![CDATA[<p>后面再写吧，先空着</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> java </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> java </tag>
             
         </tags>
       
@@ -271,6 +246,31 @@
         <tags>
             
             <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java多态</title>
+      <link href="/2022/09/09/java/%E7%AE%80%E4%BB%8B/"/>
+      <url>/2022/09/09/java/%E7%AE%80%E4%BB%8B/</url>
+      
+        <content type="html"><![CDATA[<p>后面再写吧，先空着</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
             
         </tags>
       
