@@ -4,23 +4,23 @@
   
     
     <entry>
-      <title>FQDN配置</title>
-      <link href="/2022/09/10/Operations/FQDN%E9%85%8D%E7%BD%AE/"/>
-      <url>/2022/09/10/Operations/FQDN%E9%85%8D%E7%BD%AE/</url>
+      <title>hexo 搭建博客（四）</title>
+      <link href="/2022/09/11/hexo/hexo%20%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
+      <url>/2022/09/11/hexo/hexo%20%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%9B%9B%EF%BC%89/</url>
       
-        <content type="html"><![CDATA[<h3 id="FQDN配置"><a href="#FQDN配置" class="headerlink" title="FQDN配置"></a>FQDN配置</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">[<span class="type">root</span>@<span class="type">Server02</span> ~]<span class="comment"># cat /etc/sysconfig/network   //centos6中修改主机名，centos7中是/etc/hostname</span></span><br><span class="line"><span class="comment"># Created by anaconda</span></span><br><span class="line">NETWORKING=yes</span><br><span class="line">HOSTNAME=Server02.sdskills.com         //FQDN</span><br><span class="line">[<span class="type">root</span>@<span class="type">Server02</span> ~]<span class="comment"># cat /etc/hosts</span></span><br><span class="line"><span class="number">127.0</span>.<span class="number">0.1</span>   localhost localhost.localdomain localhost4 localhost4.localdomain4</span><br><span class="line">::<span class="number">1</span>         localhost localhost.localdomain localhost6 localhost6.localdomain6</span><br><span class="line"><span class="number">192.168</span>.<span class="number">179.90</span>Server02.sdskills.com </span><br><span class="line"><span class="number">192.168</span>.<span class="number">179.96</span>Server01.sdskills.com</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[<span class="type">root</span>@<span class="type">Server01</span> ~]<span class="comment"># cat /etc/hosts</span></span><br><span class="line"><span class="number">127.0</span>.<span class="number">0.1</span>   localhost localhost.localdomain localhost4 localhost4.localdomain4</span><br><span class="line">::<span class="number">1</span>         localhost localhost.localdomain localhost6 localhost6.localdomain6</span><br><span class="line"><span class="number">192.168</span>.<span class="number">179.96</span>Server01.sdskills.com</span><br><span class="line">[<span class="type">root</span>@<span class="type">Server01</span> ~]<span class="comment"># cat /etc/sysconfig/network  //centos6中修改主机名，centos7中是/etc/hostname</span></span><br><span class="line"><span class="comment"># Created by anaconda</span></span><br><span class="line">NETWORKING=yes</span><br><span class="line">HOSTNAME=Server01.sdskills.com</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">测试：</span><br><span class="line">root@Server02 ~]<span class="comment"># ping Server01.sdskills.com</span></span><br><span class="line">PING Server01.sdskills.com (<span class="number">192.168</span>.<span class="number">179.96</span>) <span class="number">56</span>(<span class="number">84</span>) bytes of <span class="keyword">data</span>.</span><br><span class="line"><span class="number">64</span> bytes from Server01.sdskills.com (<span class="number">192.168</span>.<span class="number">179.96</span>): icmp_seq=<span class="number">1</span> ttl=<span class="number">64</span> time=<span class="number">0.488</span> ms</span><br><span class="line"><span class="number">64</span> bytes from Server01.sdskills.com (<span class="number">192.168</span>.<span class="number">179.96</span>): icmp_seq=<span class="number">2</span> ttl=<span class="number">64</span> time=<span class="number">0.561</span> ms</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h2 id="四、使用-vercel-和-coding-进行加速"><a href="#四、使用-vercel-和-coding-进行加速" class="headerlink" title="四、使用 vercel 和 coding 进行加速"></a>四、使用 vercel 和 coding 进行加速</h2><h3 id="1-使用-vercel-进行加速（暂未完成）"><a href="#1-使用-vercel-进行加速（暂未完成）" class="headerlink" title="1.使用 vercel 进行加速（暂未完成）"></a>1.使用 vercel 进行加速（暂未完成）</h3><ul><li><p>访问并登录<a href="https://vercel.com/">vercel</a>官网, 使用github登陆</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911165529288.png" alt="image-20220911165529288"></p></li><li><p>把自己的项目进行导入</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911165635983.png" alt="image-20220911165635983"></p></li><li><p>点击部署即可</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911165736615.png" alt="image-20220911165736615"></p></li><li><p>部署成功显示</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911165950481.png" alt="image-20220911165950481"></p></li><li><p>不知道啥原因无法访问，暂时不弄这个加速，用 coding 加速</p></li></ul><h3 id="2-使用coding进行加速"><a href="#2-使用coding进行加速" class="headerlink" title="2. 使用coding进行加速"></a>2. 使用coding进行加速</h3><ul><li><p>我们打开<a href="https://coding.net/">Coding的官网</a>，没有账号就进行注册</p></li><li><p>进入后，然后找到全部项目</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911172753652.png" alt="image-20220911172753652"></p></li><li><p>选择左边的来进行创建</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911173148277.png" alt="image-20220911173148277"></p></li><li><p>项目名称和用户名保持一致</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911173404564.png" alt="image-20220911173404564"></p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911173441194.png" alt="image-20220911173441194"></p></li><li><p>创建代码仓库，并初始化</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911173626268.png" alt="image-20220911173626268"></p></li><li><p>仓库名称与用户名保持一致，且公开代码仓库</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911173831829.png" alt="image-20220911173831829"></p></li><li><p>复制https地址</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911173956500.png" alt="image-20220911173956500"></p></li><li><p>使用快速初始化仓库</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911174106939.png" alt="image-20220911174106939"></p></li><li><p>打开项目，找到 _config.yml，将 coding的ssh配置到里面</p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">  <span class="attr">coding:</span> <span class="string">&#x27;https://e.coding.net/xiaozhang8/960551423/960551423.git&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li><p>然后执行下面命令</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li><li><p>执行的时候应该会弹出来，需要登录，此时使用 coding 账号登录即可，然后上传成功</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911184835165.png" alt="image-20220911184835165"></p></li><li><p>进入<a href="https://cloud.tencent.com/">腾讯云</a>，找到以下内容，然后新建应用</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911185448973.png" alt="image-20220911185448973"></p></li><li><p>部署静态网站</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911185646316.png" alt="image-20220911185646316"></p></li><li><p>应用名自己随意</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911185821023.png" alt="image-20220911185821023"></p></li><li><p>第一次会部署失败，因为没配置部署环境，如果灰色，刷新一下就好</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911190054452.png" alt="image-20220911190054452"></p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911190200499.png" alt="image-20220911190200499"></p></li><li><p>部署成功会在资源列表有显示</p><p><img src="https://cdn.jsdelivr.net/gh/960551423z/PicGo/img/image-20220911190406129.png" alt="image-20220911190406129"></p></li><li><p>到此 coding 部署完成</p></li></ul>]]></content>
       
       
       <categories>
           
-          <category> Operations </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Operations </tag>
+            <tag> hexo </tag>
             
         </tags>
       
@@ -54,36 +54,11 @@
     
     
     <entry>
-      <title>LAMP搭建（未完成）</title>
-      <link href="/2022/09/10/Operations/LAMP%E6%90%AD%E5%BB%BA%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/"/>
-      <url>/2022/09/10/Operations/LAMP%E6%90%AD%E5%BB%BA%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/</url>
+      <title>FQDN配置</title>
+      <link href="/2022/09/10/Operations/FQDN%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/09/10/Operations/FQDN%E9%85%8D%E7%BD%AE/</url>
       
-        <content type="html"><![CDATA[<p>LAMP搭建（未完成）</p><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">apr<span class="literal">-1</span>.<span class="number">4.8</span><span class="literal">-7</span>.el7.x86_64</span><br><span class="line">apr<span class="literal">-util-1</span>.<span class="number">5.2</span><span class="literal">-6</span>.el7.x86_64</span><br><span class="line">httpd<span class="literal">-2</span>.<span class="number">4.6</span><span class="literal">-95</span>.el7.centos.x86_64</span><br><span class="line">php<span class="literal">-5</span>.<span class="number">4.16</span><span class="literal">-48</span>.el7.x86_64</span><br><span class="line">mysql<span class="literal">-5</span>.<span class="number">5.68</span><span class="literal">-1</span>.el7.x86_64</span><br></pre></td></tr></table></figure><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">yum <span class="literal">-y</span> groupinstall <span class="string">&quot;GNOME Desktop&quot;</span></span><br><span class="line">yum <span class="literal">-y</span> install cmake</span><br><span class="line">yum <span class="literal">-y</span> install ncurses<span class="literal">-devel</span></span><br></pre></td></tr></table></figure><p>安装顺序</p><p>apache——&gt;mysql——&gt;php  或者  mysql——&gt;apache——&gt;php</p><p>php-5.3版本之前，mysql先于php编译；5.3之后，无所谓</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Operations </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Operations </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>dhcp配置</title>
-      <link href="/2022/09/10/Operations/dhcp%E9%85%8D%E7%BD%AE/"/>
-      <url>/2022/09/10/Operations/dhcp%E9%85%8D%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<p>dhcp配置</p><p>优点：自动分配地址</p><p>缺点：多个服务器有dhcp服务时（分配冲突），不知道主机是否被租借，除非路由器允许BOOTP协议转发</p><p>全局配置，局部配置</p><p>最小租约：就是达到87.5自动续约</p><p>最大租约：到达时间，回收</p><p>步骤：</p><p>1.调整网络编辑器中的dhcp，取消勾选</p><p>2.只保留一些</p><p><img src="C:\Users\zq\AppData\Roaming\Typora\typora-user-images\image-20210907233546330.png" alt="image-20210907233546330"></p><p>3.配置文件</p><p><img src="C:\Users\zq\AppData\Roaming\Typora\typora-user-images\image-20210907234039769.png" alt="image-20210907234039769"></p><p>4.虚拟机ip，网关需要改成同一网段</p><p>5.client改成自动获取（修改配置）</p><p>6.client查看rounte -n 和 cat /etc/resolv.conf</p><p>（dns没变，就去删除ens33里的dns）</p><p><img src="C:\Users\zq\AppData\Roaming\Typora\typora-user-images\image-20210907234617361.png" alt="image-20210907234617361"></p><p>IP配置绑定：</p><p><img src="C:\Users\zq\AppData\Roaming\Typora\typora-user-images\image-20210908071515091.png" alt="image-20210908071515091"></p><p>1.配置文件修改</p><p>2.host 主机名{</p><p>​    hardware ethernet （mac地址）</p><p>fixed-address ip ；        分配的ip  </p><p>}</p><p>实验的虚拟机的配置以及要求：</p><p>client：192.168.0.3     client.wqmsl.com   client客户端</p><p>dhcp：192.168.0.2      dhcp.wqmsl.com   dhcp服务器</p><p>实现效果：IP：<strong>192.168.0.30-192.168.0.100</strong> 分给客户端使用，IP：<strong>192.168.0.88</strong> 绑定 给经理使用，IP：<strong>192.168.0.2——192.168.0.29</strong> 给服务器保留使用。而且：现在的工作环境 下的计算机剧增，本 C 类网段的 IP 地址已经不能够满足现在的需求了，所有我配置超级作 用域来实现给分配不同网段的 IP 地址</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="FQDN配置"><a href="#FQDN配置" class="headerlink" title="FQDN配置"></a>FQDN配置</h3><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">[<span class="type">root</span>@<span class="type">Server02</span> ~]<span class="comment"># cat /etc/sysconfig/network   //centos6中修改主机名，centos7中是/etc/hostname</span></span><br><span class="line"><span class="comment"># Created by anaconda</span></span><br><span class="line">NETWORKING=yes</span><br><span class="line">HOSTNAME=Server02.sdskills.com         //FQDN</span><br><span class="line">[<span class="type">root</span>@<span class="type">Server02</span> ~]<span class="comment"># cat /etc/hosts</span></span><br><span class="line"><span class="number">127.0</span>.<span class="number">0.1</span>   localhost localhost.localdomain localhost4 localhost4.localdomain4</span><br><span class="line">::<span class="number">1</span>         localhost localhost.localdomain localhost6 localhost6.localdomain6</span><br><span class="line"><span class="number">192.168</span>.<span class="number">179.90</span>Server02.sdskills.com </span><br><span class="line"><span class="number">192.168</span>.<span class="number">179.96</span>Server01.sdskills.com</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[<span class="type">root</span>@<span class="type">Server01</span> ~]<span class="comment"># cat /etc/hosts</span></span><br><span class="line"><span class="number">127.0</span>.<span class="number">0.1</span>   localhost localhost.localdomain localhost4 localhost4.localdomain4</span><br><span class="line">::<span class="number">1</span>         localhost localhost.localdomain localhost6 localhost6.localdomain6</span><br><span class="line"><span class="number">192.168</span>.<span class="number">179.96</span>Server01.sdskills.com</span><br><span class="line">[<span class="type">root</span>@<span class="type">Server01</span> ~]<span class="comment"># cat /etc/sysconfig/network  //centos6中修改主机名，centos7中是/etc/hostname</span></span><br><span class="line"><span class="comment"># Created by anaconda</span></span><br><span class="line">NETWORKING=yes</span><br><span class="line">HOSTNAME=Server01.sdskills.com</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">测试：</span><br><span class="line">root@Server02 ~]<span class="comment"># ping Server01.sdskills.com</span></span><br><span class="line">PING Server01.sdskills.com (<span class="number">192.168</span>.<span class="number">179.96</span>) <span class="number">56</span>(<span class="number">84</span>) bytes of <span class="keyword">data</span>.</span><br><span class="line"><span class="number">64</span> bytes from Server01.sdskills.com (<span class="number">192.168</span>.<span class="number">179.96</span>): icmp_seq=<span class="number">1</span> ttl=<span class="number">64</span> time=<span class="number">0.488</span> ms</span><br><span class="line"><span class="number">64</span> bytes from Server01.sdskills.com (<span class="number">192.168</span>.<span class="number">179.96</span>): icmp_seq=<span class="number">2</span> ttl=<span class="number">64</span> time=<span class="number">0.561</span> ms</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -129,6 +104,56 @@
     
     
     <entry>
+      <title>dhcp配置</title>
+      <link href="/2022/09/10/Operations/dhcp%E9%85%8D%E7%BD%AE/"/>
+      <url>/2022/09/10/Operations/dhcp%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<p>dhcp配置</p><p>优点：自动分配地址</p><p>缺点：多个服务器有dhcp服务时（分配冲突），不知道主机是否被租借，除非路由器允许BOOTP协议转发</p><p>全局配置，局部配置</p><p>最小租约：就是达到87.5自动续约</p><p>最大租约：到达时间，回收</p><p>步骤：</p><p>1.调整网络编辑器中的dhcp，取消勾选</p><p>2.只保留一些</p><p><img src="C:\Users\zq\AppData\Roaming\Typora\typora-user-images\image-20210907233546330.png" alt="image-20210907233546330"></p><p>3.配置文件</p><p><img src="C:\Users\zq\AppData\Roaming\Typora\typora-user-images\image-20210907234039769.png" alt="image-20210907234039769"></p><p>4.虚拟机ip，网关需要改成同一网段</p><p>5.client改成自动获取（修改配置）</p><p>6.client查看rounte -n 和 cat /etc/resolv.conf</p><p>（dns没变，就去删除ens33里的dns）</p><p><img src="C:\Users\zq\AppData\Roaming\Typora\typora-user-images\image-20210907234617361.png" alt="image-20210907234617361"></p><p>IP配置绑定：</p><p><img src="C:\Users\zq\AppData\Roaming\Typora\typora-user-images\image-20210908071515091.png" alt="image-20210908071515091"></p><p>1.配置文件修改</p><p>2.host 主机名{</p><p>​    hardware ethernet （mac地址）</p><p>fixed-address ip ；        分配的ip  </p><p>}</p><p>实验的虚拟机的配置以及要求：</p><p>client：192.168.0.3     client.wqmsl.com   client客户端</p><p>dhcp：192.168.0.2      dhcp.wqmsl.com   dhcp服务器</p><p>实现效果：IP：<strong>192.168.0.30-192.168.0.100</strong> 分给客户端使用，IP：<strong>192.168.0.88</strong> 绑定 给经理使用，IP：<strong>192.168.0.2——192.168.0.29</strong> 给服务器保留使用。而且：现在的工作环境 下的计算机剧增，本 C 类网段的 IP 地址已经不能够满足现在的需求了，所有我配置超级作 用域来实现给分配不同网段的 IP 地址</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Operations </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Operations </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LAMP搭建（未完成）</title>
+      <link href="/2022/09/10/Operations/LAMP%E6%90%AD%E5%BB%BA%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/"/>
+      <url>/2022/09/10/Operations/LAMP%E6%90%AD%E5%BB%BA%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>LAMP搭建（未完成）</p><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">apr<span class="literal">-1</span>.<span class="number">4.8</span><span class="literal">-7</span>.el7.x86_64</span><br><span class="line">apr<span class="literal">-util-1</span>.<span class="number">5.2</span><span class="literal">-6</span>.el7.x86_64</span><br><span class="line">httpd<span class="literal">-2</span>.<span class="number">4.6</span><span class="literal">-95</span>.el7.centos.x86_64</span><br><span class="line">php<span class="literal">-5</span>.<span class="number">4.16</span><span class="literal">-48</span>.el7.x86_64</span><br><span class="line">mysql<span class="literal">-5</span>.<span class="number">5.68</span><span class="literal">-1</span>.el7.x86_64</span><br></pre></td></tr></table></figure><figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">yum <span class="literal">-y</span> groupinstall <span class="string">&quot;GNOME Desktop&quot;</span></span><br><span class="line">yum <span class="literal">-y</span> install cmake</span><br><span class="line">yum <span class="literal">-y</span> install ncurses<span class="literal">-devel</span></span><br></pre></td></tr></table></figure><p>安装顺序</p><p>apache——&gt;mysql——&gt;php  或者  mysql——&gt;apache——&gt;php</p><p>php-5.3版本之前，mysql先于php编译；5.3之后，无所谓</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Operations </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Operations </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ftp配置</title>
       <link href="/2022/09/10/Operations/ftp%E6%9C%8D%E5%8A%A1/"/>
       <url>/2022/09/10/Operations/ftp%E6%9C%8D%E5%8A%A1/</url>
@@ -146,6 +171,31 @@
         <tags>
             
             <tag> Operations </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java多态</title>
+      <link href="/2022/09/09/java/%E7%AE%80%E4%BB%8B/"/>
+      <url>/2022/09/09/java/%E7%AE%80%E4%BB%8B/</url>
+      
+        <content type="html"><![CDATA[<p>后面再写吧，先空着</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
             
         </tags>
       
@@ -196,31 +246,6 @@
         <tags>
             
             <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>java多态</title>
-      <link href="/2022/09/09/java/%E7%AE%80%E4%BB%8B/"/>
-      <url>/2022/09/09/java/%E7%AE%80%E4%BB%8B/</url>
-      
-        <content type="html"><![CDATA[<p>后面再写吧，先空着</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> java </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> java </tag>
             
         </tags>
       

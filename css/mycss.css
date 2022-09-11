@@ -176,5 +176,6 @@ a, img {
 
 /* swiper 更改颜色 */
 .blog-slider__pagination .swiper-pagination-bullet {
-    background: black;
+    background-color: black ;
 }
+
