@@ -169,23 +169,12 @@ a, img {
     background: rgba(9,24,41,0.8) ;
 }
 
-/* 换页，因为之前没对齐 */
-.layout > .recent-posts .pagination > * {
-    display: block;
-    float: left;
-    margin: 10px 6px;
-}
-#pagination {
-    text-align: center;
-    width: 100%;
-}
-
-#pagination .pagination {
-    width: 50%;
-    height: 50px;
-    margin: 20px auto
-}
-
+/* 换页之前没对齐 */
 .fa-fw {
     margin-top: 10px;
+}
+
+/* swiper 更改颜色 */
+.blog-slider__pagination .swiper-pagination-bullet {
+    background: black;
 }
