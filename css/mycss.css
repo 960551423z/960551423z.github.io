@@ -29,7 +29,7 @@ a, img {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #49b1f5;
+    background-color: white;
     border-radius: 2em;
 }
 
@@ -171,11 +171,38 @@ a, img {
 
 /* 换页之前没对齐 */
 .fa-fw {
-    margin-top: 10px;
+    margin-top: 11px;
 }
 
 /* swiper 更改颜色 */
-.blog-slider__pagination .swiper-pagination-bullet {
-    background-color: black ;
+/*.blog-slider__pagination .swiper-pagination-bullet {*/
+/*    background-color: black ;*/
+/*}*/
+
+/* 底部开源框 */
+.post-copyright-m-info .post-copyright-a {
+    padding: 10px 30px;
 }
 
+#post .post-copyright .post-copyright-info {
+    padding-left: 30px;
+}
+
+.post-copyright-m-info .post-copyright-c {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.post-copyright-m-info .post-copyright-u {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+#post .post-copyright-cc-info .icon {
+    display: none;
+}
+
+/* 去掉页脚的 框架 hexo 和 butterfly */
+.framework-info {
+    display: none;
+}
