@@ -133,22 +133,6 @@ a, img {
 }
 
 
-/*!* 二级导航栏横向 *!*/
-/*!*.menus_item_child li:not(#sidebar-menus li){*!*/
-/*!*    float: left;*!*/
-/*!*    border-radius: 6px!important;*!*/
-/*!*    -webkit-border-radius: 6px!important;*!*/
-/*!*    -moz-border-radius: 6px!important;*!*/
-/*!*    -ms-border-radius: 6px!important;*!*/
-/*!*    -o-border-radius: 6px!important;*!*/
-/*!*}*!*/
-/*!*.menus_item_child:not(#sidebar-menus ul){*!*/
-/*!*    left:calc(-150%)!important;!*这是估算值，为了保持元素居中的，如果不合适可以自己调*!*!*/
-/*!*}*!*/
-
-
-
-
 /*!* 顶端常驻 *!*/
 .nav-fixed #nav{
     transform: translateY(58px)!important;
@@ -171,13 +155,9 @@ a, img {
 
 /* 换页之前没对齐 */
 .fa-fw {
-    margin-top: 11px;
+    margin-top: 12px;
 }
 
-/* swiper 更改颜色 */
-/*.blog-slider__pagination .swiper-pagination-bullet {*/
-/*    background-color: black ;*/
-/*}*/
 
 /* 底部开源框 */
 .post-copyright-m-info .post-copyright-a {
@@ -205,4 +185,22 @@ a, img {
 /* 去掉页脚的 框架 hexo 和 butterfly */
 .framework-info {
     display: none;
+}
+
+
+/* 播放器进度表颜色 */
+.aplayer-bar-wrap .aplayer-bar .aplayer-played {
+    background: orange !important;
+}
+
+/* 播放器默认只留箭头部分 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+    /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer-miniswitcher .aplayer-icon {
+    background: #a8c0ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
