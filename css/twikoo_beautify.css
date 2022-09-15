@@ -211,3 +211,49 @@
         filter: none;
     }
 }
+
+/* 自己修改 */
+/* 头像距离 */
+.tk-avatar {
+    margin-right: 8px !important;
+    margin-top:  -2px;
+}
+
+
+/* 因为页面透明，因此评论框设置别的颜色 */
+.twikoo .el-input__inner, .twikoo .el-textarea__inner {
+    border-color: rgba(255,60,0,0.31) !important;
+}
+.twikoo .el-input__inner:hover, .twikoo .el-textarea__inner:hover {
+    border-color: #49b1f5 !important;
+}
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color : black !important;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color : black !important;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color : black !important;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color : black !important;
+}
+
+twikoo .el-input-group__append, .twikoo .el-input-group__prepend {
+    background-color: rgba(255,60,0,0.31) !important;
+}
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+    line-height: 2;
+}
+.tk-content {
+    margin-left: 15px;
+}
+
+/* ip颜色 */
+.tk-extras {
+    color: black!important;
+}
