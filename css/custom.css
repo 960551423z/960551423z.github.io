@@ -3,3 +3,8 @@
 h1#site-title {
     font-family: 'Zhi Mang Xing', cursive;
 }
+
+.card-announcement .announcement_content {
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 30px;
+}
